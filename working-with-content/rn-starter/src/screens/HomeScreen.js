@@ -1,25 +1,29 @@
 import React from "react";
-import { Text, StyleSheet, View } from "react-native";
+import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
+import Practice from "./practice";
 
-const HomeScreen = () => {
-  const greeting = "Hi there!";
-  const mathew = ["dog man", " cat man"];
-  const textElement = (
-    <Text>This is a text element assigned to a variable</Text>
-  );
-
+const HomeScreen = ({ navigation }) => {
   return (
     <View>
       <Text style={styles.text}>This is the components screen</Text>
-      <Text>{greeting}</Text>
-      {textElement}
+      {/* <Text>{greeting}</Text>
+      {textElement} */}
+
+      <Button 
+        onPress={() => navigation.navigate('Components')}
+        title="Go to Components Demo" 
+      />
+
+      <TouchableOpacity onPress={() => navigation.navigate('List')}>
+        <Text>Go to List Demo</Text>
+      </TouchableOpacity>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 100
+    fontSize: 30
   }
 });
 
