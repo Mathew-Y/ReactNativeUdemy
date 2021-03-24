@@ -1,5 +1,5 @@
 */node_modules/**/*
-working-with-content/rn-starter/.expo/*
+*/.expo/*
 npm-debug.*
 *.jks
 *.p8
@@ -7,7 +7,7 @@ npm-debug.*
 *.key
 *.mobileprovision
 *.orig.*
-working-with-content/rn-starter/web-build/
+*/web-build/
 
 # macOS
-working-with-content/rn-starter/.DS_Store
+*/.DS_Store
