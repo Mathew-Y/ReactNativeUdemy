@@ -9,7 +9,6 @@ const HomeScreen = ({ navigation }) => {
       {/* <Text>{greeting}</Text>
       {textElement} */}
 
-<<<<<<< HEAD
       <Button
         onPress={() => navigation.navigate("Components")}
         title="Go to Components Demo"
@@ -22,16 +21,18 @@ const HomeScreen = ({ navigation }) => {
       <TouchableOpacity onPress={() => navigation.navigate("Image")}>
         <Text>Go to Image Demo</Text>
       </TouchableOpacity>
-=======
-      <Button 
-        onPress={() => navigation.navigate('Components')}
-        title="Go to Components Demo" 
-      />
 
-      <TouchableOpacity onPress={() => navigation.navigate('List')}>
-        <Text>Go to List Demo</Text>
+      <TouchableOpacity onPress={() => navigation.navigate("Counter")}>
+        <Text>Go to Counter Demo</Text>
       </TouchableOpacity>
->>>>>>> d0d72ff9c96655160d027a51e15ce56e56761513
+
+      <TouchableOpacity onPress={() => navigation.navigate("Color")}>
+        <Text>Go to Color Demo</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity onPress={() => navigation.navigate("Square")}>
+        <Text>Go to Square Demo</Text>
+      </TouchableOpacity>
     </View>
   );
 };
