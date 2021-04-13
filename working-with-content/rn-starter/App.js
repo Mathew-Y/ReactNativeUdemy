@@ -13,6 +13,8 @@ import ImageScreen from "./src/screens/ImageScreen";
 import ColorScreen from "./src/screens/ColorScreen";
 import SquareScreen from "./src/screens/SquareScreen";
 import TextScreen from "./src/screens/TextScreen";
+import BoxScreen from "./src/screens/BoxScreen";
+import ScreenLayoutExercise from "./src/screens/ScreenLayoutExercise";
 
 const MainNavigator = createStackNavigator();
 
@@ -32,6 +34,8 @@ const App = () => {
         <MainNavigator.Screen name="Color" component={ColorScreen} />
         <MainNavigator.Screen name="Square" component={SquareScreen} />
         <MainNavigator.Screen name="Text" component={TextScreen} />
+        <MainNavigator.Screen name="Box" component={BoxScreen} />
+        <MainNavigator.Screen name="SLE" component={ScreenLayoutExercise} />
       </MainNavigator.Navigator>
     </NavigationContainer>
   );
